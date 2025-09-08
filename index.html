@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div id="calculator">
+            <input type="text" id="display" readonly>
+            <div class="button-container">
+                <button class="button"
+                    onclick="curretnDisplay='';document.querySelector('#display').value=curretnDisplay;">C</button>
+                <button class="button"
+                    onclick="curretnDisplay+='1';document.querySelector('#display').value=curretnDisplay;">1</button>
+                <button class="button"
+                    onclick="curretnDisplay+='2';document.querySelector('#display').value=curretnDisplay;">2</button>
+                <button class="button"
+                    onclick="curretnDisplay+='+';document.querySelector('#display').value=curretnDisplay;">+</button>
+                <button class="button"
+                    onclick="curretnDisplay+='3';document.querySelector('#display').value=curretnDisplay;">3</button>
+                <button class="button"
+                    onclick="curretnDisplay+='4';document.querySelector('#display').value=curretnDisplay;">4</button>
+                <button class="button"
+                    onclick="curretnDisplay+='-';document.querySelector('#display').value=curretnDisplay;">-</button>
+                <button class="button"
+                    onclick="curretnDisplay+='5';document.querySelector('#display').value=curretnDisplay;">5</button>
+                <button class="button"
+                    onclick="curretnDisplay+='6';document.querySelector('#display').value=curretnDisplay;">6</button>
+                <button class="button"
+                    onclick="curretnDisplay+='*';document.querySelector('#display').value=curretnDisplay;">*</button>
+                <button class="button"
+                    onclick="curretnDisplay+='7';document.querySelector('#display').value=curretnDisplay;">7</button>
+                <button class="button"
+                    onclick="curretnDisplay+='8';document.querySelector('#display').value=curretnDisplay;">8</button>
+                <button class="button"
+                    onclick="curretnDisplay+='/';document.querySelector('#display').value=curretnDisplay;">/</button>
+                <button class="button"
+                    onclick="curretnDisplay=eval(curretnDisplay);document.querySelector('#display').value=curretnDisplay;">=</button>
+                <button class="button"
+                    onclick="curretnDisplay+='9';document.querySelector('#display').value=curretnDisplay;">9</button>
+                <button class="button"
+                    onclick="curretnDisplay+='0';document.querySelector('#display').value=curretnDisplay;">0</button>
+                <button class="button"
+                    onclick="curretnDisplay+='.';document.querySelector('#display').value=curretnDisplay;">.</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer text -->
+    <footer>Calculator Made by Me!</footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
